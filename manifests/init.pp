@@ -2,6 +2,10 @@
 #
 # Install SourceTree.
 #
+# === Parameters:
+#
+# [*version*] Version of SourceTree to install
+#
 # === Examples
 #
 #  class { sourcetree:
