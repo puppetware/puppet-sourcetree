@@ -1,2 +1,6 @@
+2013-09-16 - Ryan Skoblenick <ryan@skoblenick.com> - 0.2.0
+  * Updated default version to 1.7.0.1
+  * Added parameters list to init script
+
 2013-09-15 - Ryan Skoblenick <ryan@skoblenick.com> - 0.1.0
   * Initial version
