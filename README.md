@@ -10,13 +10,13 @@ Supported Platforms:
 Usage
 -----
 
-Install:
+Install SouceTree 1.7.3 by default:
 
 ```
 class {'sourcetree': }
 ```
 
-Install a specific version:
+Install a specific version of SourceTree:
 
 ```
 class {'sourcetree':
