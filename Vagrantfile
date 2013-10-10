@@ -18,7 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.vmx["memsize"] = "4096"
   end
 
-  #config.vm.provision :shell, :path => ".puppet/installer/setup.sh", :args => "-c /vagrant/.puppet/installer/config.json"
+  config.vm.provision :shell, :path => ".puppet/installer/setup.sh", :args => "-c /vagrant/.puppet/installer/config.json"
 
   config.vm.provision :shell, :path => ".puppet/module.sh"
 
