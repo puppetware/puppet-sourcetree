@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box_url = "http://localhost/boxes/mountain64_vmware.box"
     v.gui = true
 
-    v.vmx["memsize"] = "4096"
+    v.vmx["memsize"] = "2048"
   end
 
   config.vm.provision :shell, :path => ".puppet/installer/setup.sh", :args => "-c /vagrant/.puppet/installer/config.json"
