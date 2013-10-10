@@ -1,5 +1,5 @@
 
-puppet module list | grep 'skoblenick-sourcetree' &2> /dev/null
+sudo puppet module list | grep 'skoblenick-sourcetree'
 
 if [ $? -ne 0 ]; then
     sudo puppet module install skoblenick/sourcetree
