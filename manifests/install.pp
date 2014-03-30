@@ -13,18 +13,13 @@
 class sourcetree::install {
   $version = $sourcetree::version
 
-  case $::kernel {
-    'Darwin': {
-      $source = "http://downloads.atlassian.com/software/sourcetree/SourceTree_${version}.dmg"
-    }
-    default: {
-      fail("Unsupported Kernel: ${::kernel} operatingsystem: ${::operatingsystem}")
-    }
+  $source = $::osfamily ? {
+    'Darwin' => "http://downloads.atlassian.com/software/sourcetree/SourceTree_${version}.dmg",
   }
 
   package {"sourcetree-${version}":
-    ensure   => installed,
-    source   => "${source}",
+    ensure => installed,
+    source => "${source}",
     provider => appdmg,
   }
 }
